@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #black {
+    background-image: url(../images/blackBackground.gif);
+    background-size: cover;
+    height: 940px;
+  }
+
+  #white {
+    background-image: url(../images/whiteBackground.gif);
+    background-size: cover;
+    height: 940px;
+    color: black;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: 800px;
+    width: 100%;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    /* margin-top: -50px; */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 25px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 25px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #FFF;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+/* ______________________________________________________________________________ */
+/* Welcome Page gif */
+/* ______________________________________________________________________________ */
+.WelcomePage {
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  height: 800px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  color: #FFF;
+}
+
+/* Bottom right text */
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  color: #FFF;
+}
+
+.top-right {
+  position: absolute;
+  top: 4px;
+  right: 30px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -100px;
+  right: 35px;
+  color: rgb(0, 0, 0);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NAVBAR CSS uses breadcrumb */
+.myNav {
+  display: none;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+}
+
+/* Add a slash symbol (|) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 4px;
+  font-size: 30px;
+  color: #fff;
+  content: "|\00a0";
+  font-family: 'Bebas Neue';
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li p {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+  display: inline;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li p:hover {
+  color: #3c3d3d;
+  text-decoration: underline;
+}
+
+/* white pages black text  */
+
+/* NAVBAR CSS uses breadcrumb */
+.myNav {
+  display: none;
+}
+
+/* Style the list */
+ul.white {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.white li {
+  display: inline;
+  font-size: 15px;
+}
+
+/* Add a slash symbol (|) before/behind each list item */
+ul.white li+li:before {
+  padding: 4px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  content: "|\00a0";
+  font-family: 'Bebas Neue';
+}
+
+/* Add a color to all links inside the list */
+ul.white li p {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Bebas Neue';
+  display: inline;
+}
+
+/* Add a color on mouse-over */
+ul.white li p:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* end of white pages */
+
+ul.socialNav li {
+  display: inline;
+}
+
+ul#socialNav {
+  list-style: none;
+  padding-top: 20px;
+}
+
+
+
+/* .barimg {
+  padding-bottom: 5px;
+} */
+
+/* ______________________________________________________________________________ */
+/* about me page */
+/* ______________________________________________________________________________ */
+
+.youtubeVideo {
+  height: 350px;
+  width: 300px;
+  /* background-color: rgb(248, 3, 3); */
+  color: #FFF;
+  grid-area: 1 / 1 / span 1 / span 1;
+  position: absolute;
+  top: 150px;
+  left: 8%;
+}
+
+.profilePicture {
+  height: 500px;
+  width: 1100px;
+  /* background-color: rgb(0, 247, 12); */
+  color: #FFF;
+  grid-area: 1 / 25/ span 1 / span 1;
+}
+
+.home-about-text {
+  /* background-color: rgb(0, 0, 0); */
+  grid-area: 1 / 15 / span 1 / span 20;
+  padding: 1em;
+  font-size: 26px;
+  width: 60%;
+  font-family: 'Bebas Neue';
+  color:rgb(255, 255, 255);
+  position: absolute;
+  top: 200px;
+  left: 35%;
+}
+
+.home-about-text h2 {
+  color: rgb(35, 46, 49);
+  position: absolute;
+  text-transform: uppercase;
+  top: -1.5em;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 0 .25em;
+}
+
+.home-about-text a {
+color: rgb(0, 0, 0);
+font-size: 1.5rem;
+background-color: rgb(235, 235, 245);
+text-decoration: none;
+}
+
+
+/* ______________________________________________________________________________ */
+/* image gallery */
+/* ______________________________________________________________________________ */
+body {
+  margin: 0;
+  font-family: Arial;
+ 
+  /* background-image: url(../images/homeAnimation.gif);
+  background-size: cover; */
+}
+
+ main {
+  width: 100%;
+  position: center;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding: 0 4px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: absolute;
+  top: 10%;
+  left: .3%;
+  /* transform: translate(-50%, -50%); */
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ______________________________________________________________________________ */
+/* contact form */
+/* ______________________________________________________________________________ */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  /* margin-top: 6px; Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=reset]:hover {
+  background-color: rgb(255, 255, 255);
+  color:black;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=reset] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(255, 255, 255);
+  color:black;
+}
+
+/* Add a background color and some padding around the form */
+.contactContainer {
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 80px;
+  margin-left: 43%;
+  margin-right: 12%;
+  position: absolute;
+  top: 80px;
+  right: 40px;
+}
+
+label {
+  color: #FFF;
+}
+
+/* Google Maps */
+/* Set the size of the div element that contains the map */
+#map {
+  height: 600px;
+  /* The height is 400 pixels */
+  width: 30%;
+  /* The width is the width of the web page */
+  
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}

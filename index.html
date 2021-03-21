@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLINKTATTOO</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/javascript.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <!-- Opening image once click calls hideHome() to hide it replace later with promo gif -->
+        <div id="WelcomePage">
+            <img src="images/homeAnimation.gif" id="WelcomePage" style="width: 100%;" style="height: 600px;"
+                onclick="currentSlide(1)">
+            <!--  hideHome();  -->
+            <div class="top-left">
+                <nav>
+                    <ul class="breadcrumb">
+                        <img src="images/smallLogo.PNG" onclick="currentSlide(1)">
+                        <li>
+                            <p onclick="hideHome(); currentSlide(1);">ABOUT</p>
+                        </li>
+                        <li>
+                            <p onclick="hideHome(); currentSlide(2);">PORTFOLIO</p>
+                        </li>
+                        <li>
+                            <p onclick="hideHome(); currentSlide(3);">CONTACT</p>
+                        </li>
+                        <li>
+                            <p onclick="hideHome(); currentSlide(4);">Store</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="top-right">
+                <ul id="socialNav">
+                    <li><a href="https://www.instagram.com/blinktattoo/"><img src="images/instagramLogo.png"
+                                style="width:100%"></a></li>
+                    <li><a href="https://twitter.com/blinktattoo"><img src="images/twitterLogo.png"
+                                style="width:100%"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCr7j0i8CSM3VLQZJFA3_gHQ"><img
+                                src="images/youtubeLogo.png" style="width:100%"></a></li>
+                    <li><a href="https://www.twitch.tv/blinktattoo"><img src="images/twitchLogo.png"
+                                style="width: 100%;"></a></li>
+                </ul>
+            </div>
+
+            <!-- Next and previous buttons
+            <a class="prev" onclick="hideHome(); plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="hideHome(); plusSlides(1)">&#10095;</a> -->
+        </div>
+
+
+        <!-- Each "page" is an seperate div which the user can use the arrows to navigate back and forth between or use the nav bar to move around -->
+        <div class="container">
+
+            <!-- ABOUT div -->
+            <div class="mySlides">
+                    <img src="images/blackBackground.gif" id="WelcomePage" style="width: 100%;" style="height: 600px;">
+
+
+
+                            <div class="home-about-text">
+
+                                <h2>About Bobby "Blink" Link</h2>
+
+                                <p>I was born and raised in Chicago now currently residing in Plainfield, Illinois
+                                    working
+                                    at
+                                    Constable Tattoo Parlor.
+                                    I started my tattooing career 7 years ago in Franklin Park, Illinois and since then
+                                    I
+                                    have
+                                    worked all over the country.</p>
+
+                                <p>I am a versatile artist that has won <strong>several</strong> awards! Recently I have
+                                    been
+                                    working on sharing my artwork throughout the world through my Twitch.tv platform.
+                                    I put my passion for art, tattooing, and technology all into one source. Follow me
+                                    on
+                                    all my
+                                    social media platforms above or below and keep up with me on Twitch to see <b>Live
+                                        Tattooing</b>!</p>
+
+                                <img src="images/banner.png" style="width:100%;">
+
+                            </div>
+
+                            <div class="youtubeVideo">
+                                <br>
+                                <br>
+                                <iframe width="450" height="215" src="https://www.youtube.com/embed/CGygRobadZI"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <iframe width="450" height="215" src="https://www.youtube.com/embed/CGygRobadZI"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <iframe width="450" height="215" src="https://www.youtube.com/embed/CGygRobadZI"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+
+                    <div class="top-left">
+                        <nav>
+                            <ul class="breadcrumb">
+                                <img src="images/smallLogo.PNG" onclick="hideSlides(1)">
+                                <li>
+                                    <p onclick="currentSlide(1);">ABOUT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(2);">PORTFOLIO</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(3);">CONTACT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(4);">STORE</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="top-right">
+                        <ul id="socialNav">
+                            <li><a href="https://www.instagram.com/blinktattoo/"><img src="images/instagramLogo.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://twitter.com/blinktattoo"><img src="images/twitterLogo.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCr7j0i8CSM3VLQZJFA3_gHQ"><img
+                                        src="images/youtubeLogo.png" style="width:100%"></a></li>
+                            <li><a href="https://www.twitch.tv/blinktattoo"><img src="images/twitchLogo.png"
+                                        style="width: 100%;"></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="hideHome(); plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="hideHome(); plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <!-- PORTFOLIO div -->
+            <div class="mySlides">
+
+                    <img src="images/whiteBackground.gif" id="WelcomePage" style="width: 100%;" style="height: 600px;">
+                    <!-- Photo Grid -->
+                    <div class="row">
+
+                        <div class="column">
+                            <img src="images/tattoos/n6.png" style="width:100%">
+                        </div>
+                        
+                        <div class="column">
+                            <img src="images/tattoos/2.jpg" style="width:100%">
+                            <img src="images/tattoos/n4.png" style="width:100%">
+                        </div>
+                        
+                        <div class="column">
+                            <img src="images/tattoos/n2.png" style="width:100%">
+                            <img src="images/tattoos/n7.png" style="width:100%">
+                            <img src="images/tattoos/n1.png" style="width:100%">
+                        </div>
+                        
+                        <div class="column">
+                            <img src="images/tattoos/n5.png" style="width:100%">
+                            <img src="images/tattoos/n3.png" style="width:100%">
+                        </div>
+
+                    </div>
+
+                    <div class="bottom-right">
+                        <h3>More tattoos on Instagram</h3>
+                    </div>
+
+                    <div class="top-left">
+                        <nav>
+                            <ul class="white">
+                                <img src="images/smallLogo.PNG" onclick="hideSlides(1)">
+                                <li>
+                                    <p onclick="currentSlide(1);">ABOUT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(2);">PORTFOLIO</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(3);">CONTACT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(4);">STORE</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="top-right">
+                        <ul id="socialNav">
+                            <li><a href="https://www.instagram.com/blinktattoo/"><img src="images/instagramLogoBlack.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://twitter.com/blinktattoo"><img src="images/twitterLogoBlack.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCr7j0i8CSM3VLQZJFA3_gHQ"><img
+                                        src="images/youtubeLogoBlack.png" style="width:100%"></a></li>
+                            <li><a href="https://www.twitch.tv/blinktattoo"><img src="images/twitchLogoBlack.png"
+                                        style="width: 100%;"></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="hideHome(); plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="hideHome(); plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- CONTACT div -->
+            <div class="mySlides">
+
+                <img src="images/blackBackground.gif" id="WelcomePage" style="width: 100%;" style="height: 600px;">
+
+                    <div class="contactContainer">
+                        <!-- add bobby's email here learn how to encrypt it so its not plaintext -->
+                        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                            <label for="fname">Name</label>
+                            <input type="text" name="name" placeholder="What's your name?">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" placeholder="Enter email address">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="text" name="phone" size="50"
+                                placeholder="Please enter contact number ex:(123) 456-7890">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subjectinput"
+                                placeholder="Include name and quick description of the tattoo (1 or 2 words)">
+                            <label for="description">Describe the tattoo</label>
+                            <textarea id="description"
+                                placeholder="Description of your tattoo. Color/Black and Grey, Size and etc. Please include any information regarding dates you're looking to get tattooed as well!"
+                                style="height:200px"></textarea>
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Reset">
+                        </form>
+                    </div>
+
+                    <div class="top-left">
+                        <nav>
+                            <ul class="breadcrumb">
+                                <img src="images/smallLogo.PNG" onclick="hideSlides(1)">
+                                <li>
+                                    <p onclick="currentSlide(1);">ABOUT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(2);">PORTFOLIO</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(3);">CONTACT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(4);">STORE</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="top-right">
+                        <ul id="socialNav">
+                            <li><a href="https://www.instagram.com/blinktattoo/"><img src="images/instagramLogo.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://twitter.com/blinktattoo"><img src="images/twitterLogo.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCr7j0i8CSM3VLQZJFA3_gHQ"><img
+                                        src="images/youtubeLogo.png" style="width:100%"></a></li>
+                            <li><a href="https://www.twitch.tv/blinktattoo"><img src="images/twitchLogo.png"
+                                        style="width: 100%;"></a></li>
+                        </ul>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="hideHome(); plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="hideHome(); plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- STORE div -->
+            <div class="mySlides">
+
+                <img src="images/whiteBackground.gif" id="WelcomePage" style="width: 100%;" style="height: 600px;">
+
+                    <div class="center">
+                        <img src="images/centerlogo.PNG" onclick="currentSlide(1)">
+                    </div>
+
+                    <div class="top-left">
+                        <nav>
+                            <ul class="white">
+                                <img src="images/smallLogo.PNG" onclick="hideSlides(1)">
+                                <li>
+                                    <p onclick="currentSlide(1);">ABOUT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(2);">PORTFOLIO</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(3);">CONTACT</p>
+                                </li>
+                                <li>
+                                    <p onclick="currentSlide(4);">STORE</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="top-right">
+                        <ul id="socialNav">
+                            <li><a href="https://www.instagram.com/blinktattoo/"><img src="images/instagramLogoBlack.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://twitter.com/blinktattoo"><img src="images/twitterLogoBlack.png"
+                                        style="width:100%"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCr7j0i8CSM3VLQZJFA3_gHQ"><img
+                                        src="images/youtubeLogoBlack.png" style="width:100%"></a></li>
+                            <li><a href="https://www.twitch.tv/blinktattoo"><img src="images/twitchLogoBlack.png"
+                                        style="width: 100%;"></a></li>
+                        </ul>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="hideHome(); plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="hideHome(); plusSlides(1)">&#10095;</a>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
