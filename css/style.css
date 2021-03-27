@@ -108,12 +108,21 @@
   text-align: center;
   color: #FFF;
   height: 800px;
+  
 }
 
 /* Top left text */
 .top-left {
   position: absolute;
   top: 25px;
+  left: 50px;
+  color: #FFF;
+}
+
+/* Top left image */
+.top-left-image {
+  position: absolute;
+  top: 50px;
   left: 16px;
   color: #FFF;
 }
@@ -185,7 +194,7 @@ ul.breadcrumb li p {
 /* Add a color on mouse-over */
 ul.breadcrumb li p:hover {
   color: #3c3d3d;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* white pages black text  */
@@ -229,7 +238,7 @@ ul.white li p {
 /* Add a color on mouse-over */
 ul.white li p:hover {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* end of white pages */
