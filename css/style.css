@@ -4,19 +4,6 @@
   * {
     box-sizing: border-box;
   }
-
-  #black {
-    background-image: url(../images/blackBackground.gif);
-    background-size: cover;
-    height: 940px;
-  }
-
-  #white {
-    background-image: url(../images/whiteBackground.gif);
-    background-size: cover;
-    height: 940px;
-    color: black;
-  }
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
@@ -69,14 +56,6 @@
     color: #FFF;
   }
 
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
   .row:after {
     content: "";
     display: table;
@@ -115,15 +94,15 @@
 .top-left {
   position: absolute;
   top: 25px;
-  left: 50px;
+  left: 80px;
   color: #FFF;
 }
 
 /* Top left image */
 .top-left-image {
   position: absolute;
-  top: 50px;
-  left: 16px;
+  top: 30px;
+  left: -30px;
   color: #FFF;
 }
 
@@ -252,11 +231,6 @@ ul#socialNav {
   padding-top: 20px;
 }
 
-
-
-/* .barimg {
-  padding-bottom: 5px;
-} */
 
 /* ______________________________________________________________________________ */
 /* about me page */
@@ -439,17 +413,4 @@ input[type=submit]:hover {
 
 label {
   color: #FFF;
-}
-
-/* Google Maps */
-/* Set the size of the div element that contains the map */
-#map {
-  height: 600px;
-  /* The height is 400 pixels */
-  width: 30%;
-  /* The width is the width of the web page */
-  
-  position: absolute;
-  bottom: 40px;
-  left: 150px;
 }
