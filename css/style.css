@@ -222,10 +222,6 @@ ul.white li p:hover {
 
 /* end of white pages */
 
-ul.socialNav li {
-  display: inline;
-}
-
 ul#socialNav {
   list-style: none;
   padding-top: 20px;
@@ -414,3 +410,40 @@ input[type=submit]:hover {
 label {
   color: #FFF;
 }
+
+.w3-animate-left{
+  position:relative;
+  animation:animateleft 0.4s
+}
+
+@keyframes animateleft{
+  from{bottom:-600px;opacity:.2} 
+  to{bottom:0;opacity:1}
+}
+
+@keyframes animateright{
+  from{right:-800px;opacity:.4} 
+  to{right:0;opacity:1}
+}
+
+@media screen and (max-width:1600) {
+  .background {
+    display: none;
+  }
+  
+}
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

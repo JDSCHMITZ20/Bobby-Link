@@ -13,7 +13,6 @@ function currentSlide(n) {
 
 function showSlides(n) {
   document.getElementById("WelcomePage").style.display = "none";
-
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -50,4 +49,16 @@ function hideHome() {
 
 function showHome() {
   document.getElementById("WelcomePage").style.display = "block";
+}
+
+function slideRight() {
+  document.getElementById("mySlides").animate([
+    // keyframes
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(-300px)' }
+  ], {
+    // timing options
+    duration: 1000,
+    iterations: 1
+  });
 }
